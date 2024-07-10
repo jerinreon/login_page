@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.loginpage.Forgottenemail">
+      <class name="com.loginpage.Validloginwithdashboard">
         <methods>
-          <include name="existemailid"/>
-          <include name="validdata"/>
+          <include name="hrms"/>
           <include name="launchbrowser"/>
-          <include name="navigation"/>
         </methods>
-      </class> <!-- com.loginpage.Forgottenemail -->
+      </class> <!-- com.loginpage.Validloginwithdashboard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
