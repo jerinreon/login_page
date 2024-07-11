@@ -5,7 +5,7 @@
     <classes>
       <class name="com.loginpage.Validloginwithdashboard">
         <methods>
-          <include name="hrms"/>
+          <include name="salesfollowup"/>
           <include name="launchbrowser"/>
         </methods>
       </class> <!-- com.loginpage.Validloginwithdashboard -->
