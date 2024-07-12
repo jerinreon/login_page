@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-09T17:31:38 GMT-07:00" name="Default suite" finished-at="2024-07-09T17:31:51 GMT-07:00" duration-ms="12979">
+  <suite started-at="2024-07-11T17:57:57 GMT-07:00" name="Default suite" finished-at="2024-07-11T17:58:30 GMT-07:00" duration-ms="33592">
     <groups>
     </groups>
-    <test started-at="2024-07-09T17:31:38 GMT-07:00" name="Default test" finished-at="2024-07-09T17:31:51 GMT-07:00" duration-ms="12979">
+    <test started-at="2024-07-11T17:57:57 GMT-07:00" name="Default test" finished-at="2024-07-11T17:58:30 GMT-07:00" duration-ms="33592">
       <class name="com.loginpage.Validloginwithdashboard">
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.loginpage.Validloginwithdashboard@ffaa6af]" started-at="2024-07-09T17:31:38 GMT-07:00" name="launchbrowser" finished-at="2024-07-09T17:31:44 GMT-07:00" duration-ms="5229" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:57:57 GMT-07:00" name="launchbrowser" finished-at="2024-07-11T17:58:02 GMT-07:00" duration-ms="5449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="validcrendentials()[pri:1, instance:com.loginpage.Validloginwithdashboard@ffaa6af]" started-at="2024-07-09T17:31:44 GMT-07:00" name="validcrendentials" finished-at="2024-07-09T17:31:49 GMT-07:00" duration-ms="5575" status="PASS">
+        <test-method signature="validcrendentials()[pri:1, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:58:02 GMT-07:00" name="validcrendentials" finished-at="2024-07-11T17:58:07 GMT-07:00" duration-ms="5078" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validcrendentials -->
-        <test-method signature="hrms()[pri:2, instance:com.loginpage.Validloginwithdashboard@ffaa6af]" started-at="2024-07-09T17:31:49 GMT-07:00" name="hrms" finished-at="2024-07-09T17:31:51 GMT-07:00" duration-ms="2120" status="PASS">
+        <test-method signature="crm()[pri:2, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:58:07 GMT-07:00" name="crm" finished-at="2024-07-11T17:58:08 GMT-07:00" duration-ms="348" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hrms -->
+        </test-method> <!-- crm -->
+        <test-method signature="lead()[pri:3, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:58:08 GMT-07:00" name="lead" finished-at="2024-07-11T17:58:09 GMT-07:00" duration-ms="951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lead -->
+        <test-method signature="validationmessageofcontactinfo()[pri:4, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:58:09 GMT-07:00" name="validationmessageofcontactinfo" finished-at="2024-07-11T17:58:10 GMT-07:00" duration-ms="979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationmessageofcontactinfo -->
+        <test-method signature="contactinfo()[pri:5, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:58:10 GMT-07:00" name="contactinfo" finished-at="2024-07-11T17:58:30 GMT-07:00" duration-ms="20079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactinfo -->
+        <test-method signature="validationmessageofsalesfollowup()[pri:6, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:58:30 GMT-07:00" name="validationmessageofsalesfollowup" finished-at="2024-07-11T17:58:30 GMT-07:00" duration-ms="652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationmessageofsalesfollowup -->
       </class> <!-- com.loginpage.Validloginwithdashboard -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

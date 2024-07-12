@@ -43,7 +43,7 @@ public class Validloginwithdashboard {
 		
 		
 	}
-	
+
 	  // verify that the valid login credentials with user name and password which the system can be login
 	  //login
     @Test (priority=1)
@@ -67,7 +67,124 @@ public class Validloginwithdashboard {
 		  Assert.assertEquals(actualtitle, expectedtitle);
 	  }
 	  
+    //verify the crm module when click on the link
     @Test (priority=2)
+     public void crm () {
+    	 
+    	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+    	
+    	
+    	WebElement crm = driver.findElement(By.linkText("CRM"));
+    	 crm.click();
+    	 
+    	 String actualvalue;
+    	 String expectedvalue = "Lead";
+    	 
+    	 actualvalue = driver.findElement(By.xpath("//span[@class='layoutStyle_spanStyle']")).getText();
+    	 Assert.assertEquals(actualvalue, expectedvalue);
+      
+     }
+    
+    //verify that add the lead when clicked on the plus button
+    @Test (priority=3)
+    public void lead () {
+    	
+    	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+    
+    	WebElement lead = driver.findElement(By.xpath("//p[@class='crm_header']//*[name()='svg']"));
+    	lead.click();
+    	
+    	String actualvalue;
+    	String expectedvalue = "Add Lead";
+    	
+    	actualvalue = driver.findElement(By.xpath("//p[@class='crm_header pb-0 m-0']")).getText();
+    	Assert.assertEquals(actualvalue, expectedvalue,"button is not working");
+	    	
+ 
+    }
+    
+    
+    //verify that if button is disabled then clicked on it that will provide by a error message
+    @Test (priority=4)
+    public void validationmessageofcontactinfo () throws InterruptedException  {
+    	
+    
+    	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+    	WebElement validation = driver.findElement(By.xpath("//div[@id='rc-tabs-0-tab-contact_info']//div[1]"));
+    	validation.click();
+    	 
+    	WebElement validationMessageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[normalize-space()='Please Submit The Basic Info']")));
+    	String actualMessage = validationMessageElement.getText();
+    	
+    	String expectedmessage = "Please Submit The Basic Info";	
+    	Assert.assertEquals(actualMessage, expectedmessage,"validation message not found");
+    	
+    	
+    	
+    }
+    
+    //verify that contactinfo whether it is enabled or not
+    @Test(priority=5)
+  public void contactinfo () {
+	  
+    	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+    	 List<WebElement> tabButtons = driver.findElements(By.xpath("//div[@id='rc-tabs-9-tab-contact_info']//div[1]"));
+
+        
+         Assert.assertTrue(tabButtons.isEmpty(), "tab button should be disabled!");
+    
+         }
+          
+    
+  //verify that if button is disabled then clicked on it that will provide by an error message
+    @Test (priority=6)
+     public void validationmessageofsalesfollowup () {
+    	 
+    	 
+    	 driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+     	WebElement validation = driver.findElement(By.xpath("//div[contains(text(),'Sales Follow Up')]"));
+     	validation.click();
+     	 
+     	WebElement validationMessageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[normalize-space()='Please Submit The Basic Info']")));
+     	String actualMessage = validationMessageElement.getText();
+     	
+     	String expectedmessage = "Please Submit The Basic Info";	
+     	Assert.assertEquals(actualMessage, expectedmessage,"validation message not found");
+    	 
+     }
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+
+    //verify the search bar working when give a name which should be consider by the values into the field
+    @Test (priority =4,enabled=false)
+    public void searchbar () {
+    	
+        driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+    	WebElement search = driver.findElement(By.xpath("//input[@placeholder='Search']"));
+    	search.sendKeys("Jerin");
+    	
+    	String actualvalue;
+    	String expectedvalue = "Jerin";
+    	
+    	 actualvalue= driver.findElement(By.xpath("//span[normalize-space()='Jerin']")).getText();
+       	Assert.assertEquals(actualvalue,expectedvalue, "searchbar is not working");
+    			
+    
+    }
+ 
+    
+    
+ 
+    
+    @Test (enabled= false)
     public void hrms () {
     	
     	
@@ -84,7 +201,7 @@ public class Validloginwithdashboard {
 		 element.click();
     	 
 		 
-		 List<String> departments = Arrays.asList("HR", "manager", "Testing", "Engineering", "Finance");
+		 List<String> departments = Arrays.asList("testdm", "cv", "bbc", "mca", "bca");
 		 int randomIndex = random.nextInt(departments.size());
 		 String randomDepartment = departments.get(randomIndex);
 		 
