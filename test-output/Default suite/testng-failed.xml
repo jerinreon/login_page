@@ -5,8 +5,8 @@
     <classes>
       <class name="com.loginpage.Validloginwithdashboard">
         <methods>
-          <include name="salesfollowup"/>
           <include name="launchbrowser"/>
+          <include name="verifytheinvalidname"/>
         </methods>
       </class> <!-- com.loginpage.Validloginwithdashboard -->
     </classes>

@@ -1,40 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
+<testng-results ignored="2" total="17" passed="14" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-11T17:57:57 GMT-07:00" name="Default suite" finished-at="2024-07-11T17:58:30 GMT-07:00" duration-ms="33592">
+  <suite started-at="2024-07-12T17:06:20 GMT-07:00" name="Default suite" finished-at="2024-07-12T17:06:58 GMT-07:00" duration-ms="38914">
     <groups>
     </groups>
-    <test started-at="2024-07-11T17:57:57 GMT-07:00" name="Default test" finished-at="2024-07-11T17:58:30 GMT-07:00" duration-ms="33592">
+    <test started-at="2024-07-12T17:06:20 GMT-07:00" name="Default test" finished-at="2024-07-12T17:06:58 GMT-07:00" duration-ms="38914">
       <class name="com.loginpage.Validloginwithdashboard">
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:57:57 GMT-07:00" name="launchbrowser" finished-at="2024-07-11T17:58:02 GMT-07:00" duration-ms="5449" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:20 GMT-07:00" name="launchbrowser" finished-at="2024-07-12T17:06:25 GMT-07:00" duration-ms="5608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="validcrendentials()[pri:1, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:58:02 GMT-07:00" name="validcrendentials" finished-at="2024-07-11T17:58:07 GMT-07:00" duration-ms="5078" status="PASS">
+        <test-method signature="validcrendentials()[pri:1, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:25 GMT-07:00" name="validcrendentials" finished-at="2024-07-12T17:06:31 GMT-07:00" duration-ms="5754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validcrendentials -->
-        <test-method signature="crm()[pri:2, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:58:07 GMT-07:00" name="crm" finished-at="2024-07-11T17:58:08 GMT-07:00" duration-ms="348" status="PASS">
+        <test-method signature="crm()[pri:2, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:31 GMT-07:00" name="crm" finished-at="2024-07-12T17:06:31 GMT-07:00" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crm -->
-        <test-method signature="lead()[pri:3, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:58:08 GMT-07:00" name="lead" finished-at="2024-07-11T17:58:09 GMT-07:00" duration-ms="951" status="PASS">
+        <test-method signature="lead()[pri:3, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:31 GMT-07:00" name="lead" finished-at="2024-07-12T17:06:32 GMT-07:00" duration-ms="1141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lead -->
-        <test-method signature="validationmessageofcontactinfo()[pri:4, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:58:09 GMT-07:00" name="validationmessageofcontactinfo" finished-at="2024-07-11T17:58:10 GMT-07:00" duration-ms="979" status="PASS">
+        <test-method signature="validationmessageofcontactinfo()[pri:4, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:32 GMT-07:00" name="validationmessageofcontactinfo" finished-at="2024-07-12T17:06:33 GMT-07:00" duration-ms="918" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validationmessageofcontactinfo -->
-        <test-method signature="contactinfo()[pri:5, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:58:10 GMT-07:00" name="contactinfo" finished-at="2024-07-11T17:58:30 GMT-07:00" duration-ms="20079" status="PASS">
+        <test-method signature="contactinfo()[pri:5, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:33 GMT-07:00" name="contactinfo" finished-at="2024-07-12T17:06:53 GMT-07:00" duration-ms="20093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactinfo -->
-        <test-method signature="validationmessageofsalesfollowup()[pri:6, instance:com.loginpage.Validloginwithdashboard@729d991e]" started-at="2024-07-11T17:58:30 GMT-07:00" name="validationmessageofsalesfollowup" finished-at="2024-07-11T17:58:30 GMT-07:00" duration-ms="652" status="PASS">
+        <test-method signature="validationmessageofsalesfollowup()[pri:6, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:53 GMT-07:00" name="validationmessageofsalesfollowup" finished-at="2024-07-12T17:06:54 GMT-07:00" duration-ms="645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validationmessageofsalesfollowup -->
+        <test-method signature="verifycheckbox()[pri:7, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:54 GMT-07:00" name="verifycheckbox" finished-at="2024-07-12T17:06:54 GMT-07:00" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifycheckbox -->
+        <test-method signature="verifyname()[pri:8, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:54 GMT-07:00" name="verifyname" finished-at="2024-07-12T17:06:56 GMT-07:00" duration-ms="1613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyname -->
+        <test-method signature="verifythedropdown()[pri:9, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:56 GMT-07:00" name="verifythedropdown" finished-at="2024-07-12T17:06:56 GMT-07:00" duration-ms="385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifythedropdown -->
+        <test-method signature="verifytheinvalidname()[pri:10, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:56 GMT-07:00" name="verifytheinvalidname" finished-at="2024-07-12T17:06:58 GMT-07:00" duration-ms="1693" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The name field should not accept numbers. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The name field should not accept numbers. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertFalse(Assert.java:67)
+at com.loginpage.Validloginwithdashboard.verifytheinvalidname(Validloginwithdashboard.java:249)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheinvalidname -->
+        <test-method signature="mandatorysymbolofname()[pri:11, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:58 GMT-07:00" name="mandatorysymbolofname" finished-at="2024-07-12T17:06:58 GMT-07:00" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mandatorysymbolofname -->
+        <test-method signature="mandotrysymboloftype()[pri:12, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:58 GMT-07:00" name="mandotrysymboloftype" finished-at="2024-07-12T17:06:58 GMT-07:00" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mandotrysymboloftype -->
+        <test-method signature="mandatorysymbolofphonenumberfield()[pri:13, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:58 GMT-07:00" name="mandatorysymbolofphonenumberfield" finished-at="2024-07-12T17:06:58 GMT-07:00" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mandatorysymbolofphonenumberfield -->
+        <test-method signature="mandatorysymbolofemail()[pri:14, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:58 GMT-07:00" name="mandatorysymbolofemail" finished-at="2024-07-12T17:06:58 GMT-07:00" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mandatorysymbolofemail -->
+        <test-method signature="manadatorysymbolofbranch()[pri:15, instance:com.loginpage.Validloginwithdashboard@36916eb0]" started-at="2024-07-12T17:06:58 GMT-07:00" name="manadatorysymbolofbranch" finished-at="2024-07-12T17:06:58 GMT-07:00" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manadatorysymbolofbranch -->
       </class> <!-- com.loginpage.Validloginwithdashboard -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
