@@ -18,6 +18,12 @@
           <include name="launchbrowser"/>
         </methods>
       </class> <!-- com.loginpage.Loginpage -->
+      <class name="com.loginpage.Validloginwithdashboard">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="verifytheinvalidname"/>
+        </methods>
+      </class> <!-- com.loginpage.Validloginwithdashboard -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

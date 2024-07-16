@@ -1,5 +1,10 @@
 package com.loginpage;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
@@ -7,6 +12,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -335,7 +341,7 @@ public class Validloginwithdashboard {
       
       
       @Test (priority=15)
-      public void manadatorysymbolofbranch () {
+      public void mandatorysymbolofbranch () {
     	  
     	  
     	  WebElement branchFieldLabel2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body/div[@id='root']/div/div[@class='m-0 p-0']/div[@class='m-0 p-0 layoutStyle']/div[@class='d-flex p-0 m-0']/div[contains(@class,'pt-2')]/div[@class='pt-2 pl-0 ps-3 pe-2 layoutStyle_childrenStyle']/div[@class='mt-4 mx-3']/div[@class='row']/div[contains(@class,'col-12 mx-3')]/div/div/form[@class='ant-form ant-form-horizontal css-nllxry']/div[@class='card lead-card p-4']/div[@class='row d-flex justify-content-start']/div[5]/div[1]"))); // Replace with your label's xpath
@@ -354,24 +360,245 @@ public class Validloginwithdashboard {
       }
       
       
+      @Test (priority=16)
+      public void mandotrysymbolofleadsource () {
+    	  
+    	WebElement scrollableElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='pt-2 pl-0 ps-3 pe-2 layoutStyle_childrenStyle']")));
+    	 
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript ("arguments[0].scrollTop = 500", scrollableElement);
+        
+        
+        
+        
+  	  WebElement leadsource = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body/div[@id='root']/div/div[@class='m-0 p-0']/div[@class='m-0 p-0 layoutStyle']/div[@class='d-flex p-0 m-0']/div[@class=' pt-2']/div[@class='pt-2 pl-0 ps-3 pe-2 layoutStyle_childrenStyle']/div[@class='mt-4 mx-3']/div[@class='row']/div[@class=' col-12 mx-3']/div/div/form[@class='ant-form ant-form-horizontal css-nllxry']/div[2]/div[1]/div[1]/div[1]"))); // Replace with your label's xpath
+
+        // Get the text of the label
+        String labelText2 = leadsource.getText();
+
+        // Check if the label contains the mandatory symbol (*)
+        boolean containsMandatorySymbol2 = labelText2.contains("*");
+
+        // Assert that the mandatory symbol is present
+        Assert.assertTrue(containsMandatorySymbol2, "The mandatory symbol is not present for the name field.");
+  	    	  
+          
+      }
+      
+      @Test (priority=17)
+       public void leadpurpose () {
+    	   
+    	  
+    	  
+    	  WebElement leadpurpose = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='col-lg-4 ps-5 pe-5']//div[@class='mb-2 add_lead_fiels_name']"))); // Replace with your label's xpath
+
+          // Get the text of the label
+          String labelText2 = leadpurpose.getText();
+
+          // Check if the label contains the mandatory symbol (*)
+          boolean containsMandatorySymbol2 = labelText2.contains("*");
+
+          // Assert that the mandatory symbol is present
+          Assert.assertTrue(containsMandatorySymbol2, "The mandatory symbol is not present for the name field.");
+    	    	  
+    	   
+    	  
+       }
       
       
+      @Test (priority=18)
+      public void productname () {
+    	  
+    	  
+    	  
+    	  WebElement productname = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body/div[@id='root']/div/div[@class='m-0 p-0']/div[@class='m-0 p-0 layoutStyle']/div[@class='d-flex p-0 m-0']/div[contains(@class,'pt-2')]/div[@class='pt-2 pl-0 ps-3 pe-2 layoutStyle_childrenStyle']/div[@class='mt-4 mx-3']/div[@class='row']/div[contains(@class,'col-12 mx-3')]/div/div/form[@class='ant-form ant-form-horizontal css-nllxry']/div[2]/div[1]/div[3]/div[1]"))); // Replace with your label's xpath
+
+          // Get the text of the label
+          String labelText2 = productname.getText();
+
+          // Check if the label contains the mandatory symbol (*)
+          boolean containsMandatorySymbol2 = labelText2.contains("*");
+
+          // Assert that the mandatory symbol is present
+          Assert.assertTrue(containsMandatorySymbol2, "The mandatory symbol is not present for the name field.");
+    	    	  
+    	   	  
+    	  
+      }
+      
+      @Test (priority=19)
+      public void salesperson () {
+    	  
+    	  WebElement scrollableElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='pt-2 pl-0 ps-3 pe-2 layoutStyle_childrenStyle']")));
+     	 
+      	JavascriptExecutor js = (JavascriptExecutor) driver;
+          js.executeScript ("arguments[0].scrollTop = 800", scrollableElement);
+          
+          
+    	  
+          
+          
+          WebElement salesperson = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(" //body/div[@id='root']/div/div[@class='m-0 p-0']/div[@class='m-0 p-0 layoutStyle']/div[@class='d-flex p-0 m-0']/div[contains(@class,'pt-2')]/div[@class='pt-2 pl-0 ps-3 pe-2 layoutStyle_childrenStyle']/div[@class='mt-4 mx-3']/div[@class='row']/div[contains(@class,'col-12 mx-3')]/div/div/form[@class='ant-form ant-form-horizontal css-nllxry']/div[3]/div[1]/div[1]/div[1]"))); // Replace with your label's xpath
+
+          // Get the text of the label
+          String labelText2 = salesperson.getText();
+
+          // Check if the label contains the mandatory symbol (*)
+          boolean containsMandatorySymbol2 = labelText2.contains("*");
+
+          // Assert that the mandatory symbol is present
+          Assert.assertTrue(containsMandatorySymbol2, "The mandatory symbol is not present for the name field.");
+    	    	  
+    	  
+    	  
+      }
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+      @Test (priority=20)
+      public void status ( ) {
+    	  
+    	  WebElement status = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(" //body/div[@id='root']/div/div[@class='m-0 p-0']/div[@class='m-0 p-0 layoutStyle']/div[@class='d-flex p-0 m-0']/div[contains(@class,'pt-2')]/div[@class='pt-2 pl-0 ps-3 pe-2 layoutStyle_childrenStyle']/div[@class='mt-4 mx-3']/div[@class='row']/div[contains(@class,'col-12 mx-3')]/div/div/form[@class='ant-form ant-form-horizontal css-nllxry']/div[3]/div[1]/div[2]/div[1]"))); // Replace with your label's xpath
+
+          // Get the text of the label
+          String labelText2 = status.getText();
+
+          // Check if the label contains the mandatory symbol (*)
+          boolean containsMandatorySymbol2 = labelText2.contains("*");
+
+          // Assert that the mandatory symbol is present
+          Assert.assertTrue(containsMandatorySymbol2, "The mandatory symbol is not present for the name field.");
+    	    	 	  
+    	  
+      }
+    
+     @Test (priority=21)
+      public void country () {
+    	  
+    	 WebElement scrollableElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='pt-2 pl-0 ps-3 pe-2 layoutStyle_childrenStyle']")));
+     	 
+       	JavascriptExecutor js = (JavascriptExecutor) driver;
+           js.executeScript ("arguments[0].scrollTop = 1200", scrollableElement);
+    	 
+    
+           WebElement country = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(" //body/div[@id='root']/div/div[@class='m-0 p-0']/div[@class='m-0 p-0 layoutStyle']/div[@class='d-flex p-0 m-0']/div[@class=' pt-2']/div[@class='pt-2 pl-0 ps-3 pe-2 layoutStyle_childrenStyle']/div[@class='mt-4 mx-3']/div[@class='row']/div[@class=' col-12 mx-3']/div/div/form[@class='ant-form ant-form-horizontal css-nllxry']/div[4]/div[1]/div[1]/div[1]"))); // Replace with your label's xpath
+
+           // Get the text of the label
+           String labelText2 = country.getText();
+
+           // Check if the label contains the mandatory symbol (*)
+           boolean containsMandatorySymbol2 = labelText2.contains("*");
+
+           // Assert that the mandatory symbol is present
+           Assert.assertTrue(containsMandatorySymbol2, "The mandatory symbol is not present for the name field.");
+     	    	 	  
+           
+           
+           
+    	  
+      }
       
     
-    
-    
+     @Test (priority=22)
+     public void location () {
+    	 
+    	 
+    	 
+
+         WebElement country = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(" //body/div[@id='root']/div/div[@class='m-0 p-0']/div[@class='m-0 p-0 layoutStyle']/div[@class='d-flex p-0 m-0']/div[contains(@class,'pt-2')]/div[@class='pt-2 pl-0 ps-3 pe-2 layoutStyle_childrenStyle']/div[@class='mt-4 mx-3']/div[@class='row']/div[contains(@class,'col-12 mx-3')]/div/div/form[@class='ant-form ant-form-horizontal css-nllxry']/div[4]/div[1]/div[3]/div[1]"))); // Replace with your label's xpath
+
+         // Get the text of the label
+         String labelText2 = country.getText();
+
+         // Check if the label contains the mandatory symbol (*)
+         boolean containsMandatorySymbol2 = labelText2.contains("*");
+
+         // Assert that the mandatory symbol is present
+         Assert.assertTrue(containsMandatorySymbol2, "The mandatory symbol is not present for the name field.");
+   	    	 	  
+    	 
+    	 
+     }
+      
+      @Test (priority=23)
+      public void pageupload () throws InterruptedException, AWTException {
+    	  
+    	  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+    	  
+     	 WebElement scrollableElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='pt-2 pl-0 ps-3 pe-2 layoutStyle_childrenStyle']")));
+      	 
+    	
+    	  JavascriptExecutor js = (JavascriptExecutor) driver;
+          js.executeScript ("arguments[0].scrollTop = 1700", scrollableElement);
+          
+          WebElement fileInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='ant-btn css-nllxry ant-btn-default editProductButton']")));
+  
+          fileInput.click();
+          
+          Thread.sleep(2000);
+
+          Robot robot= new Robot();
+          String filepath = "C:\\Users\\Jerin\\Downloads\\test.pdf\n"+ "C:\\Users\\Jerin\\Downloads\\SamplePNGImage_10mbmb.png\n";
+          
+          
+          
+          StringSelection selection = new StringSelection(filepath);
+
+          Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection,null);
+          
+      		 
+      		 robot.keyPress(KeyEvent.VK_CONTROL);
+      		 
+      		 robot.keyPress(KeyEvent.VK_V);
+      		 
+      	
+
+
+      		 robot.keyRelease(KeyEvent.VK_V);
+      		 robot.keyRelease(KeyEvent.VK_CONTROL);
+      		 robot.keyPress(KeyEvent.VK_ENTER);
+      		 robot.keyRelease(KeyEvent.VK_ENTER);
+     
+      	Thread.sleep(5000);
+ 
+      		 
+         
+      		 
+             
+
+      		 
+
+      }	 
+
+          
+         		 
+       
+        	   
+        	
+        	 
+        	 
+        	 
+        	   
+        
+              		
+             
+     
+    	  
+         		 
+         		 
+         	
+         		 
+         		 
+    	  
+    	  
+    	  
+      
+      
+      
+      
+      
+      
+      
+      
     
 
     //verify the search bar working when give a name which should be consider by the values into the field
