@@ -84,7 +84,7 @@ public class Validloginwithdashboard {
 		 element.click();
     	 
 		 
-		 List<String> departments = Arrays.asList("HR", "manager", "Testing", "Engineering", "Finance");
+		 List<String> departments = Arrays.asList("testmn", "testsales", "dev", "civil", "mechanic","electric");
 		 int randomIndex = random.nextInt(departments.size());
 		 String randomDepartment = departments.get(randomIndex);
 		 
